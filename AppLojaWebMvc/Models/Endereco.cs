@@ -17,6 +17,8 @@ namespace AppLojaWebMvc.Models
         public string Numero { get; set; }
         public string Complemento { get; set; }
 
+        [Display(Name = "CEP")]
+
         [Required(ErrorMessage = "O campo {0} é obrigatório")] // O {0} representa o nome do campo referido
         [StringLength(8, ErrorMessage = "O campo {0} precisa ter {1} caracteres", MinimumLength = 8)] // Ordem de parametros do StringLength {0}Campo, {1}Maximo
         public string Cep { get; set; }
